@@ -23,4 +23,8 @@ public struct Constants {
         public static let CabinetMedium         = "CabinetGrotesk-Medium"
         public static let CabinetRegular        = "CabinetGrotesk-Regular"
     }
+    
+    public struct UserCacheKeys {
+        public static let getUserDetailListData = "getUserDetailListData"
+    }
 }
