@@ -33,7 +33,7 @@
 		F24786862F65631D00A5FDE6 /* Exceptions for "Users Directory" folder in "Users Directory" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				SupportingElements/Info.plist,
+				Info.plist,
 			);
 			target = F247865A2F65631B00A5FDE6 /* Users Directory */;
 		};

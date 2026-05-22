@@ -8,7 +8,7 @@
 import Foundation
 
 final class UserDetailListResponse: Codable {
-    let users: [UserDetail]
+    let results: [UserDetail]
     let info: ResponseInfo
 }
 
@@ -147,4 +147,30 @@ final class ResponseInfo: Codable {
     let results: Int
     let page: Int
     let version: String
+}
+
+public enum ContactDetailCellType: Codable {
+    case name
+    case email
+    case phone
+    case website
+    case company
+    case address
+    
+    func getTitleName() -> String {
+        switch self {
+        case .name:
+            return "Name"
+        case .email:
+            return "Email"
+        case .phone:
+            return "Phone"
+        case .website:
+            return "Website"
+        case .company:
+            return "Company"
+        case .address:
+            return "Address"
+        }
+    }
 }

@@ -22,7 +22,7 @@ final class UserListingViewModel {
         if !forceRefresh,
            let cachedResponse: UserDetailListResponse = UserCacheManager.shared.getObject(forKey: cacheKey,
                                                                                            type: UserDetailListResponse.self) {
-            self.users = cachedResponse.users
+            self.users = cachedResponse.results
             self.onDataReload?()
             return
         }
@@ -36,7 +36,7 @@ final class UserListingViewModel {
             
             switch result {
             case .success(let response):
-                self.users = response.users
+                self.users = response.results
                 UserCacheManager.shared.save(response, forKey: self.cacheKey)
                 self.onDataReload?()
                 
