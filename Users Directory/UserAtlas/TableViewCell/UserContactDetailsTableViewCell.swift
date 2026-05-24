@@ -9,6 +9,8 @@ import UIKit
 
 class UserContactDetailsTableViewCell: UITableViewCell {
     
+    static let identifier = "UserContactDetailsTableViewCell"
+    
     class Model {
         var detail: String
         var type: ContactDetailCellType
@@ -38,6 +40,10 @@ class UserContactDetailsTableViewCell: UITableViewCell {
     func configureCell(cellModel: UserContactDetailsTableViewCell.Model) {
         lblContactType.text = cellModel.type.getTitleName()
         lblContactDetail.text = cellModel.detail
+        containerView.layer.cornerRadius = 4.0
+        containerView.layer.masksToBounds = true
+        containerView.layer.borderWidth = 1.0
+        containerView.layer.borderColor = UIColor(hex: "DDDDDD").cgColor
     }
     
 }
