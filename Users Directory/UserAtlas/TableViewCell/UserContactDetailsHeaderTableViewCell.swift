@@ -49,14 +49,14 @@ class UserContactDetailsHeaderTableViewCell: UITableViewCell {
         
         containerView.layer.cornerRadius = 4.0
         containerView.layer.masksToBounds = true
-        containerView.layer.borderWidth = 1.0
+        containerView.layer.borderWidth = 0.5
         containerView.layer.borderColor = UIColor(hex: "DDDDDD").cgColor
         
         profileImageView.layer.cornerRadius = profileImageView.frame.height/2
         profileImageView.layer.masksToBounds = true
-        profileImageView.layer.shadowColor = UIColor(hex: "9A9A9A").cgColor
-        profileImageView.layer.shadowOffset = .init(width: 0, height: 1)
-        profileImageView.layer.shadowRadius = 1.0
-        profileImageView.layer.shadowOpacity = 0.5
+//        profileImageView.layer.shadowColor = UIColor(hex: "9A9A9A").cgColor
+//        profileImageView.layer.shadowOffset = .init(width: 0, height: 1)
+//        profileImageView.layer.shadowRadius = 1.0
+//        profileImageView.layer.shadowOpacity = 0.5
     }
 }

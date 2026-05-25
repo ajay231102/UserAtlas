@@ -88,11 +88,11 @@ extension UserListingViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserListTableViewCell.identifier, for: indexPath) as? UserListTableViewCell else {
-            return
-        }
         
-//        let user = viewModel.user(at: indexPath.row)
+        let user = viewModel.user(at: indexPath.row)
+        let model = UserDetailsViewModel(user: user)
+        let vc = UserDetailViewController.getInstance(model: model)
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
 }

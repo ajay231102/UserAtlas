@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailViewController" customModule="Users_Directory" customModuleProvider="target">
             <connections>
+                <outlet property="lblDescription" destination="RV1-od-woV" id="GrT-WA-JpX"/>
+                <outlet property="lblHeader" destination="jzG-QX-CAo" id="YOA-62-lb5"/>
+                <outlet property="tableView" destination="EBv-0s-6IQ" id="MSt-uw-TI1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

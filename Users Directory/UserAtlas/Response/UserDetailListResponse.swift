@@ -156,6 +156,8 @@ public enum ContactDetailCellType: Codable {
     case website
     case company
     case address
+    case dob
+    case gender
     
     func getTitleName() -> String {
         switch self {
@@ -171,6 +173,10 @@ public enum ContactDetailCellType: Codable {
             return "Company"
         case .address:
             return "Address"
+        case .dob:
+            return "DOB"
+        case .gender:
+            return "Gender"
         }
     }
 }

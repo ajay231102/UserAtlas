@@ -19,10 +19,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2O-MX-MOS">
-                        <rect key="frame" x="0.0" y="0.0" width="376" height="222"/>
+                        <rect key="frame" x="16" y="12" width="344" height="202"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNt-fT-yor">
-                                <rect key="frame" x="160" y="16" width="56" height="56"/>
+                                <rect key="frame" x="144" y="16" width="56" height="56"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aSu-Ft-mDZ">
                                         <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -38,8 +38,8 @@
                                     <constraint firstItem="aSu-Ft-mDZ" firstAttribute="leading" secondItem="iNt-fT-yor" secondAttribute="leading" id="wVC-v4-48K"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd0-OK-l4b">
-                                <rect key="frame" x="12" y="84" width="352" height="126"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd0-OK-l4b">
+                                <rect key="frame" x="12" y="84" width="320" height="106"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,10 +57,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="O2O-MX-MOS" secondAttribute="trailing" id="0XZ-cd-W1C"/>
-                    <constraint firstItem="O2O-MX-MOS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HU9-dE-g2c"/>
-                    <constraint firstAttribute="bottom" secondItem="O2O-MX-MOS" secondAttribute="bottom" id="UOf-Ry-tS4"/>
-                    <constraint firstItem="O2O-MX-MOS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rI5-Nh-uYk"/>
+                    <constraint firstAttribute="trailing" secondItem="O2O-MX-MOS" secondAttribute="trailing" constant="16" id="0XZ-cd-W1C"/>
+                    <constraint firstItem="O2O-MX-MOS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="HU9-dE-g2c"/>
+                    <constraint firstAttribute="bottom" secondItem="O2O-MX-MOS" secondAttribute="bottom" constant="8" id="UOf-Ry-tS4"/>
+                    <constraint firstItem="O2O-MX-MOS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rI5-Nh-uYk"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

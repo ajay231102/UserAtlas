@@ -42,7 +42,7 @@ class UserContactDetailsTableViewCell: UITableViewCell {
         lblContactDetail.text = cellModel.detail
         containerView.layer.cornerRadius = 4.0
         containerView.layer.masksToBounds = true
-        containerView.layer.borderWidth = 1.0
+        containerView.layer.borderWidth = 0.5
         containerView.layer.borderColor = UIColor(hex: "DDDDDD").cgColor
     }
     
